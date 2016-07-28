@@ -195,10 +195,6 @@ PRODUCT_PACKAGES += \
 	libstagefrighthw \
 	libc2dcolorconvert
 
-# Gello
-PRODUCT_PACKAGES += \
-	Gello
-
 # GPS
 PRODUCT_PACKAGES += \
         libloc_adapter \
