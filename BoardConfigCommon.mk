@@ -33,6 +33,15 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 TARGET_KERNEL_SOURCE := kernel/google/msm
 TARGET_KERNEL_CONFIG := cyanogen_flo_defconfig
 
+# Kernel Toolchain
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber/bin
+TARGET_GCC_VERSION_ARM := 4.9-uber
+
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 5.3-uber
+
+
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
 BOARD_USES_FLUENCE_INCALL := true
